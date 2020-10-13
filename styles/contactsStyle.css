@@ -1,0 +1,14 @@
+.contacts-second-title {
+    font-size: 30px;
+}
+.contacts-title {
+    font-size: 35px;
+}
+@media (max-width: 767px) {
+    .contacts-second-title {
+        font-size: 20px;
+    }
+    .contacts-title {
+        font-size: 25px;
+    }
+}

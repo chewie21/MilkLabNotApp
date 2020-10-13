@@ -1,0 +1,138 @@
+.scroll-block {
+    scroll-margin: 62px;
+}
+/* Стрелка */
+.arrow-up {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 97;
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/arrow.png");
+}
+.arrow-up:hover {
+    background-image: url("../img/arrowHover.png");
+}
+/* main-navbar */
+.nav-main-ul {
+    padding: 1rem 0 1rem 0;
+}
+.nav-main-li {
+    width: 45%;
+    text-align: center;
+    align-self: center;
+}
+.nav-link.active {
+    background: #54A9D4 !important;
+    color: #fff !important;
+}
+.nav-main-a {
+    color: #54A9D4 !important;
+    font-size: 20px;
+}
+/* menu */
+.menu-title {
+    font-size: 35px;
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+}
+.menu-second-title {
+    font-size: 30px;
+}
+.menu-close:hover {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* Карточки продукта */
+.product-card {
+    text-align: center;
+    min-width: 255px !important;
+    max-width: 255px;
+    margin-top: 15px;
+    margin-bottom: 15px !important;
+    border: none !important;
+}
+.product-card:hover {
+    box-shadow: rgba(84, 169, 212, 1) -4px 9px 25px -6px;
+}
+/* Карточки товара - мобильный */
+.product-card-mobile {
+    min-width: 194px;
+    border: none;
+}
+.product-card-shortText-mobile {
+    font-size: 15px;
+}
+/* Модальная карточка */
+.modal-card-content {
+    background: #54A9D4;
+    color: #fff;
+    text-align: center;
+}
+.modal-card-close {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #54A9D4;
+    padding: .5rem;
+    width: 30px;
+    height: 30px;
+}
+@media (min-width: 1200px) {
+    .product-card-img {
+        height: 360px;
+    }
+}
+@media (max-width: 1200px) {
+    .product-card-img {
+        height: 408px;
+    }
+    .product-card {
+        min-width: 290px !important;
+        max-width: 290px !important;
+    }
+}
+@media (max-width: 991px) {
+    .product-card-img {
+        height: 465px;
+    }
+    .product-card {
+        min-width: 330px !important;
+        max-width: 300px;
+    }
+    .menuSections {
+        padding-right: .6rem !important;
+        padding-left: .6rem !important;
+    }
+}
+@media (max-width: 767px) {
+    /* слайдер */
+    .carousel {
+        display: none;
+    }
+    .nav-main-a {
+        color: #54A9D4 !important;
+        font-size: 15px;
+    }
+    /* menu */
+    .menu-title {
+        font-size: 35px;
+        display: none;
+    }
+    .menu-second-title {
+        text-align: center;
+        font-size: 25px;
+    }
+    .main-menu-nav {
+        display: none;
+    }
+    .nav-header-menu-left {
+        display: none !important;
+    }
+    .modal-card-close {
+        display: flex;
+    }
+}

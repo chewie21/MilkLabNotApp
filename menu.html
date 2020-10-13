@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MILKLAB</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+    <link rel="stylesheet" href="./styles/menuStyle.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/792b3c2763.js" crossorigin="anonymous"></script>
+    <script src="./scripts/mainScript.js" defer></script>
+    <script src="./scripts/menuScript.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Навбар -->
+        <nav class="navbar fixed-top nav-header">
+            <div class="container-fluid">
+                <div class="navbar-brand nav-header-menu-left" type="button">
+                    <img src="img/menu.png">
+                </div>
+                <a class="navbar-brand nav-header-title-img" href="menu.html">
+                    <img src="img/titlePng.png">
+                </a>
+                <ul class="nav nav-header-ul">
+                    <li class="nav-item">
+                        <a class="nav-link nav-header-li" href="menu.html">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-header-li" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-header-li" href="information.html">О нас</a>
+                    </li>
+                </ul>
+                <div class="navbar-brand nav-header-menu-right" type="button">
+                    <img src="img/menu.png">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Стрелка вверх -->
+        <div class="arrow-up" type="button"></div>
+        <!-- Выпадающее меню -->
+        <div class="menu">
+            <!-- Кнопка закрытия -->
+            <img src="img/menuClose.png" type="button" class="menu-close modal-menu-link">
+            <!-- Колонка со ссылками-->
+            <ul class="nav flex-column text-center">
+
+                <p class="h3"><a class="nav-link modal-menu-link modal-menu-title" href="menu.html">Меню</a></p>
+
+                <p class="h3"><a class="nav-link modal-menu-link main-scroll modal-menu-title" href="#main-menu">Основное меню</a></p>
+
+                <li class="nav-item">
+                    <a class="nav-link modal-menu-link modal-li main-scroll" href="#salad">Салаты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal-menu-link modal-li main-scroll" href="#hotSnack">Горячие закуски</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal-menu-link modal-li main-scroll" href="#soup">Супы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal-menu-link modal-li main-scroll" href="#pasta">Пасты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal-menu-link modal-li main-scroll" href="#hotFood">Горячие блюда</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal-menu-link modal-li main-scroll" href="#burger">Бургеры</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal-menu-link modal-li main-scroll" href="#desserts">Десерты</a>
+                </li>
+            <hr class="modal-menu-hr">
+                <p class="h3"><a class="nav-link modal-menu-link bar-scroll modal-menu-title" href="#bar-card">Барная карта</a></p>
+
+                <li class="nav-item">
+                    <a class="nav-link modal-menu-link modal-li bar-scroll" href="#cofe">Кофе</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal-menu-link modal-li bar-scroll" href="#tea">Чай</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal-menu-link modal-li bar-scroll" href="#lemonade">Домашние лимонады</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal-menu-link modal-li bar-scroll" href="#milkshake">Молочные котели</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal-menu-link modal-li bar-scroll" href="#drink">Напитки</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal-menu-link modal-li bar-scroll" href="#beer">Пиво</a>
+                </li>
+
+                <p class="h3"><a class="nav-link modal-menu-link modal-menu-title" href="contacts.html">Контакты</a></p>
+
+                <p class="h3"><a class="nav-link modal-menu-link modal-menu-title" href="information.html">О нас</a></p>
+            </ul>
+        </div>
+        <!-- Слайдер -->
+        <div id="carouselMenu" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselMenuTop" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselMenuTop" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/menu1.jpg" class="w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/menu2.jpg" class="w-100">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselMenu" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselMenu" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- Навигациооная панель -->
+        <div class="container">
+            <ul class="nav nav-pills nav-main-ul justify-content-around" id="pills-tab" role="tablist">
+                <li class="nav-item nav-main-li" role="presentation">
+                  <a class="nav-link nav-main-a active" id="main-menu-tab" data-toggle="pill" href="#main-menu" role="tab" aria-controls="main-menu" aria-selected="true">Основное меню</a>
+                </li>
+                <li class="nav-item nav-main-li" role="presentation">
+                  <a class="nav-link nav-main-a" id="bar-card-tab" data-toggle="pill" href="#bar-card" role="tab" aria-controls="bar-card" aria-selected="false">Барная карта</a>
+                </li>
+              </ul>
+        </div>
+
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Основное меню -->
+            <div class="tab-pane fade show active scroll-block" id="main-menu" role="tabpanel" aria-labelledby="main-menu-tab">
+                <p class="lead text-center menu-title">Основное меню</p>
+                <nav class="navbar main-menu-nav">
+                    <ul class="nav m-auto main-menu-ul justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link main-menu-li" href="#salad">Салаты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-menu-li" href="#hotSnack">Горячие закуски</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-menu-li" href="#soup">Супы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-menu-li" href="#pasta">Паста</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-menu-li" href="#hotFood">Горячие блюда</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-menu-li" href="#burger">Бургеры</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-menu-li" href="#desserts">Десерты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="container">
+
+                    <p class="lead menu-second-title scroll-block" id="salad">Салаты</p>
+                    
+                    <p class="lead menu-second-title scroll-block" id="hotSnack">Горячие закуски</p>
+
+                    <p class="lead menu-second-title scroll-block" id="soup">Супы</p>
+
+                    <p class="lead menu-second-title scroll-block" id="pasta">Паста</p>
+                
+                    <p class="lead menu-second-title scroll-block" id="hotFood">Горячие блюда</p>
+                
+                    <p class="lead menu-second-title scroll-block" id="burger">Бургеры</p>
+                    
+                    <p class="lead menu-second-title scroll-block" id="desserts">Десерты</p>
+                    
+                </div>
+            </div>
+
+            <!-- Барная карта -->
+            <div class="tab-pane fade scroll-block" id="bar-card" role="tabpanel" aria-labelledby="bar-card-tab">
+                <p class="lead text-center menu-title scroll-block">Барная карта</p>
+                <nav class="navbar main-menu-nav">
+                    <ul class="nav m-auto main-menu-ul">
+                        <li class="nav-item">
+                            <a class="nav-link main-menu-li" href="#cofe">Кофе</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-menu-li" href="#tea">Чай</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-menu-li" href="#lemonade">Домашние лимонады</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-menu-li" href="#milkshake">Молочные котели</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-menu-li" href="#drink">Напитки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-menu-li" href="#beer">Пиво</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="container">
+                    
+                    <p class="lead menu-second-title scroll-block" id="cofe">Кофе</p>
+                
+                    <p class="lead menu-second-title scroll-block" id="tea">Чай</p>
+                    
+                    <p class="lead menu-second-title scroll-block" id="lemonade">Домашние лимонады</p>
+                    
+                    <p class="lead menu-second-title scroll-block" id="milkshake">Молочные котели</p>
+                    
+                    <p class="lead menu-second-title scroll-block" id="drink">Напитки</p>
+                    
+                    <p class="lead menu-second-title scroll-block" id="beer">Пиво</p>
+                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-nav">
+            <nav class="navbar justify-content-around footer-info">
+                <div class="footer-img" type="button"></div>
+                <ul class="nav flex-column">
+                    <p class="h6"><a class="nav-link nav-footer-li main-scroll" href="#main-menu">Основное меню</a></p>
+                    <li class="nav-item">
+                        <a class="nav-link nav-footer-li main-scroll" href="#salad">Салаты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-footer-li main-scroll" href="#hotSnack">Горячие закуски</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-footer-li main-scroll" href="#soup">Супы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-footer-li main-scroll" href="#pasta">Пасты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-footer-li main-scroll" href="#hotFood">Горячие блюда</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-footer-li main-scroll" href="#burger">Бургеры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-footer-li main-scroll" href="#desserts">Десерты</a>
+                    </li>
+                </ul>
+                <ul class="nav flex-column">
+                    <p class="h6"><a class="nav-link nav-footer-li bar-scroll" href="#bar-menu">Барная карта</a></p>
+                    <li class="nav-item">
+                        <a class="nav-link nav-footer-li bar-scroll" href="#cofe">Кофе</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-footer-li bar-scroll" href="#tea">Чай</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-footer-li bar-scroll" href="#lemonade">Домашние лимонады</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-footer-li bar-scroll" href="#milkshake">Молочные котели</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-footer-li bar-scroll" href="#drink">Напитки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-footer-li bar-scroll" href="#beer">Пиво</a>
+                    </li>
+                </ul>
+                <ul class="nav flex-column">
+                    <p class="h6"><a class="nav-link nav-footer-li" href="menu.html">Меню</a></p>
+                    <p class="h6"><a class="nav-link nav-footer-li" href="contacts.html">Контакты</a></p>
+                    <p class="h6"><a class="nav-link nav-footer-li" href="information.html">О нас</a></p>
+                </ul>
+                <ul class="nav flex-column">
+                        <p class="h6 nav-footer-title"><i class="fas fa-phone mr-2"></i>Телефон</p>
+                        <p class="lead nav-footer-second">+7 (927) 688-88-29</p>
+                        <p class="h6 open-map nav-footer-title" type="button"><i class="fas fa-map-marker-alt mr-2"></i>Адрес</p>
+                        <p class="lead open-map nav-footer-second" type="button">г. Самара, <br> улица Максима Горького, 115</p>
+                        <p class="h6 m-0" type="button">
+                            <a class="nav-link nav-footer-title p-0" href="https://instagram.com/milklab_smr?igshid=lihl7d95vay5">
+                                <i class="fab fa-instagram mr-2"></i>Instagram
+                            </a>
+                        </p>
+                    </div>
+                </ul>
+            </nav>
+            <nav class="navbar justify-content-around footer-info-mobile">
+                <div class="footer-img" type="button"></div>
+                <ul class="nav flex-column pt-4 text-center">
+                    <p class="h6"><a class="nav-link nav-footer-li" href="menu.html">Меню</a></p>
+                    <p class="h6"><a class="nav-link nav-footer-li" href="contacts.html">Контакты</a></p>
+                    <p class="h6 mb-3"><a class="nav-link nav-footer-li" href="information.html">О нас</a></p>
+                    <p class="h6 nav-footer-title"><i class="fas fa-phone mr-2"></i>Телефон</p>
+                    <p class="lead nav-footer-second">+7 (927) 688-88-29</p>
+                    <p class="h6 open-map nav-footer-title" type="button"><i class="fas fa-map-marker-alt mr-2"></i>Адрес</p>
+                    <p class="lead open-map nav-footer-second" type="button">г. Самара, <br> улица Максима Горького, 115</p>
+                    <p class="h6 m-0" type="button">
+                        <a class="nav-link nav-footer-title p-0" href="https://instagram.com/milklab_smr?igshid=lihl7d95vay5">
+                            <i class="fab fa-instagram mr-2"></i>Instagram
+                        </a>
+                    </p>
+                </ul>
+            </nav>
+            <hr class="footer-hr">
+            <nav class="navbar justify-content-center footer-logo">
+                <p class="h6 m-0" style="color: #fff;">MilkLab © 2020</p>
+            </nav>
+        </div> 
+
+    </footer>
+
+    <!-- Map -->
+    <div class="modal fade" id="modal-map" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-map-content">
+                <div class="modal-body p-1">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7168a357776e535a2805dc7ecd5c1773bd9e9c909ba48e62101533cdb83fcd4c&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Карточка товара -->
+    <div class="modal fade" id="modal-card" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-card-content">
+                <img src="img/menuClose.png" type="button" class="modal-card-close">
+                <img class="card-img-top modal-card-img">
+                <div class="modal-body">
+                    <h5 class="card-title modal-card-title">Название карточки</h5>
+                    <p class="card-text modal-card-text lead">Текст</p>
+                    <h5 class="card-title"><span class="modal-card-coast"></span> руб</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Примеры карточек -->
+    <!-- Для больших экранов -->
+    <div class="card product-card hide" type="button">
+        <img class="card-img-top product-card-img img-copy">
+        <div class="card-body">
+            <h5 class="card-title product-card-title title-copy">Название карточки</h5>
+            <p class="card-text lead product-card-shortText">Текст</p>
+            <p class="card-text product-card-text hide text-copy">Текст</p>
+        </div>
+        <div class="card-footer bg-white" style="border: none;">
+            <h5 class="card-title"><span class="product-card-footer coast-copy"></span> руб</h5>
+        </div>
+    </div>
+    <!-- Для мобильных -->
+    <div class="card product-card-mobile hide mt-3 ">
+        <div class="row no-gutters">
+          <div class="col-4" style="align-self: center;">
+            <img class="card-img product-card-img-mobile img-copy">
+          </div>
+          <div class="col-8" style="align-self: center;">
+            <div class="card-body">
+              <h5 class="card-title product-card-title-mobile title-copy">Название карточки</h5>
+              <p class="card-text lead product-card-shortText-mobile">Короткий текст</p>
+              <p class="card-text product-card-text-mobile hide text-copy">Текст</p>
+              <h5 class="card-title"><span class="product-card-footer-mobile coast-copy"></span> руб</h5>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</body>
+</html>

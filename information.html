@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MILK LAB</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+    <link rel="stylesheet" href="./styles/informationStyle.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/792b3c2763.js" crossorigin="anonymous"></script>
+    <script src="./scripts/mainScript.js" defer></script>
+    <script src="./scripts/informationScript.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Навбар -->
+        <nav class="navbar fixed-top nav-header">
+            <div class="container-fluid">
+                <div class="navbar-brand nav-header-menu-left" type="button">
+                    <img src="img/menu.png">
+                </div>
+                <a class="navbar-brand nav-header-title-img" href="menu.html">
+                    <img src="img/titlePng.png">
+                </a>
+                <ul class="nav nav-header-ul">
+                    <li class="nav-item">
+                        <a class="nav-link nav-header-li" href="menu.html">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-header-li" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-header-li" href="information.html">О нас</a>
+                    </li>
+                </ul>
+                <div class="navbar-brand nav-header-menu-right" type="button">
+                    <img src="img/menu.png">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Стрелка вверх -->
+        <div class="arrow-up" type="button"></div>
+        <!-- Выпадающее меню -->
+        <div class="menu">
+            <!-- Кнопка закрытия -->
+            <img src="img/menuClose.png" type="button" class="menu-close modal-menu-link">
+            <!-- Колонка со ссылками-->
+            <ul class="nav flex-column text-center">
+
+                <p class="h3"><a class="nav-link modal-menu-link modal-menu-title" href="menu.html">Меню</a></p>
+
+                <p class="h3"><a class="nav-link modal-menu-link modal-menu-title" href="contacts.html">Контакты</a></p>
+
+                <p class="h3"><a class="nav-link modal-menu-link modal-menu-title" href="information.html">О нас</a></p>
+            </ul>
+        </div>
+
+        <img class="w-100 rounded" src="img/information.jpg">
+
+        <div class="container" style="padding-top: 2rem;">
+            <p class="lead text-center info-title">Сейчас всё объясним:</p>
+            <p class="lead info-second-title"> Утром, в суматохе, ты думаешь, куда бы заехать и вкусно позавтракать, верно?
+                В течение дня снова встаёт вопрос: «где поработать, чтобы никто не отвлекал», знакомо?
+                И, конечно же, вечером надо обязательно встретиться с друзьями. Узнал себя?</p>
+        </div>
+        <div class="container-fluid">
+            <p class="text-center info-title-block rounded py-2">"Варианты для каждого случая разные,
+                <br>но можно просто выбрать для всего этого один - Milk Lab!"</p>
+        </div>
+            
+        <div class="container"  style="padding-bottom: 2rem;">
+            <p class="lead info-second-title">Именно здесь ты будешь начинать свой день, наслаждаясь чашкой кофе и так полюбившемся тебе завтраком. И именно здесь ты будешь собираться с друзьями после трудового дня или просто в выходные,
+                    чтобы расслабиться и насладиться паровым коктейлем от наших ребят.</p>
+            <p class="lead text-center info-title">Мы именно то заведение, которое ты так долго искал!</p>
+        </div>
+
+        <img class="w-100 rounded" src="img/information2.jpg">
+
+        <div class="container" style="padding-bottom: 2rem; padding-top: 2rem;">
+            <p class="lead text-center m-0 info-title">Обещаем, любовь с первого взгляда обеспечена.<br>
+                Поэтому, до скорой встречи!
+            </p>
+            
+            <div class="review-slider">
+                <div class="card-row" style="padding-top: 2rem;">
+                    <div class="cards">
+                        <div class="card text-center card-review">
+                            <blockquote class="blockquote mb-0 card-body">
+                              <p>Хорошая кухня и прекрасный вид на волгу &#128571 &#128571 &#128571</p>
+                              <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                    <cite title="Source Title">Света</cite>
+                                </small>
+                              </footer>
+                            </blockquote>
+                        </div>
+                        <div class="card text-center card-review">
+                            <blockquote class="blockquote mb-0 card-body">
+                                <p>Очень красивый интерьер, вкусные обеды и интересная подача блюд &#128525</p>
+                                <footer class="blockquote-footer">
+                                  <small class="text-muted">
+                                      <cite title="Source Title">Диана</cite>
+                                  </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div class="card text-center card-review">
+                            <blockquote class="blockquote mb-0 card-body">
+                                <p>Самые лучшие кальяны с котиками и вкусные милкшейки &#128571 &#128571 &#128571</p>
+                                <footer class="blockquote-footer">
+                                  <small class="text-muted">
+                                      <cite title="Source Title">Оля</cite>
+                                  </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div class="card text-center card-review">
+                            <blockquote class="blockquote mb-0 card-body">
+                                <p>Спасибо за классный сервис и эстетическое удовольствие &#128523 &#128525</p>
+                                <footer class="blockquote-footer">
+                                  <small class="text-muted">
+                                      <cite title="Source Title">Настя</cite>
+                                  </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div class="card text-center card-review">
+                            <blockquote class="blockquote mb-0 card-body">
+                                <p>Вид из окон у этого места действительно прекрасен.</p>
+                                <footer class="blockquote-footer">
+                                  <small class="text-muted">
+                                      <cite title="Source Title">Инесса</cite>
+                                  </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div class="card text-center card-review">
+                            <blockquote class="blockquote mb-0 card-body">
+                                <p>Вкуснейшие чизкейки в Самаре &#128523</p>
+                                <footer class="blockquote-footer">
+                                  <small class="text-muted">
+                                      <cite title="Source Title">Никита</cite>
+                                  </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="arrow-left prev" id="arrow-left"></a>
+                <a href="#" class="arrow-right next" id="arrow-right"></a>
+            </div>
+  
+        </div>
+
+    </main>
+    
+    <footer>
+
+        <div class="footer-nav">
+            <nav class="navbar justify-content-around footer-info py-4">
+                <div class="footer-img" type="button"></div>
+                <ul class="nav flex-column footer-column">
+                    <p class="h6"><a class="nav-link nav-footer-li" href="menu.html">Меню</a></p>
+                    <p class="h6"><a class="nav-link nav-footer-li" href="contacts.html">Контакты</a></p>
+                    <p class="h6"><a class="nav-link nav-footer-li" href="information.html">О нас</a></p>
+                </ul>
+                <ul class="nav flex-column footer-column">
+                    <p class="h6 nav-footer-title"><i class="fas fa-phone mr-2"></i>Телефон</p>
+                    <p class="lead nav-footer-second">+7 (927) 688-88-29</p>
+                </ul>
+                <ul class="nav flex-column footer-column">
+                    <p class="h6 open-map nav-footer-title" type="button"><i class="fas fa-map-marker-alt mr-2"></i>Адрес</p>
+                    <p class="lead open-map nav-footer-second m-0" type="button">г. Самара, <br> улица Максима Горького, 115</p>
+                </ul>
+                <ul class="nav flex-column footer-column">
+                        <p class="h6" type="button">
+                            <a class="nav-link nav-footer-title p-0" href="https://instagram.com/milklab_smr?igshid=lihl7d95vay5">
+                                <i class="fab fa-instagram mr-2"></i>Instagram
+                            </a>
+                        </p>
+                    </div>
+                </ul>
+            </nav>
+            <nav class="navbar justify-content-around footer-info-mobile">
+                <div class="footer-img" type="button"></div>
+                <ul class="nav flex-column pt-4 text-center">
+                    <p class="h6"><a class="nav-link nav-footer-li" href="menu.html">Меню</a></p>
+                    <p class="h6"><a class="nav-link nav-footer-li" href="contacts.html">Контакты</a></p>
+                    <p class="h6 mb-3"><a class="nav-link nav-footer-li" href="information.html">О нас</a></p>
+                    <p class="h6 nav-footer-title"><i class="fas fa-phone mr-2"></i>Телефон</p>
+                    <p class="lead nav-footer-second">+7 (927) 688-88-29</p>
+                    <p class="h6 open-map nav-footer-title" type="button"><i class="fas fa-map-marker-alt mr-2"></i>Адрес</p>
+                    <p class="lead open-map nav-footer-second" type="button">г. Самара, <br> улица Максима Горького, 115</p>
+                    <p class="h6 m-0" type="button">
+                        <a class="nav-link nav-footer-title p-0" href="https://instagram.com/milklab_smr?igshid=lihl7d95vay5">
+                            <i class="fab fa-instagram mr-2"></i>Instagram
+                        </a>
+                    </p>
+                </ul>
+            </nav>
+            <hr class="footer-hr">
+            <nav class="navbar justify-content-center footer-logo">
+                <p class="h6 m-0" style="color: #fff;">MilkLab © 2020</p>
+            </nav>
+        </div> 
+
+    </footer>
+
+    <!-- Map -->
+    <div class="modal fade" id="modal-map" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-map-content">
+                <div class="modal-body p-1">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7168a357776e535a2805dc7ecd5c1773bd9e9c909ba48e62101533cdb83fcd4c&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
